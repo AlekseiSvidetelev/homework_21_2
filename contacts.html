@@ -21,23 +21,31 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3 sidebar">
-            <h4>Меню</h4>
-            <hr class="border-3"/>
-            <a class="btn btn-outline-info rounded w-100" href="home.html">Главная</a>
-            <a class="btn btn-outline-info rounded w-100" href="category.html">Категории</a>
-            <a class="btn btn-outline-info rounded w-100" href="catalog.html">Каталог</a>
-            <a class="btn btn-outline-info active rounded w-100" href="contacts.html">Контакты</a>
-            <div class="dropdown mt-auto position-relative">
-                <hr class="border-3"/>
-                <a class="btn btn-secondary dropdown-toggle w-100" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Пользователь
-                </a>
-                <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="#">Профиль</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Выход</a></li>
-                </ul>
+        <div class="col-3 sidebar sticky-top" style="height: 100vh;">
+            <div class="d-flex flex-column h-100">
+                <div>
+                    <h4>Меню</h4>
+                    <hr class="border-3">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-outline-info rounded" href="home.html">Главная</a>
+                        <a class="btn btn-outline-info rounded" href="category.html">Категории</a>
+                        <a class="btn btn-outline-info rounded" href="catalog.html">Каталог</a>
+                        <a class="btn btn-outline-info active rounded" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <hr class="border-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100" data-bs-toggle="dropdown">
+                            Пользователь
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><hr class="dropdown-divider m-0"></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     <div class="col-9">
