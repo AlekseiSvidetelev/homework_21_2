@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .sidebar {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .sticky-top {
+      z-index: 1020;
+    }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 sidebar sticky-top">
+            <div class="d-flex flex-column h-100">
+                <div>
+                    <h4>Меню</h4>
+                    <hr class="border-3">
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-outline-info rounded" href="home.html">Главная</a>
+                        <a class="btn btn-outline-info rounded" href="category.html">Категории</a>
+                        <a class="btn btn-outline-info rounded" href="catalog.html">Каталог</a>
+                        <a class="btn btn-outline-info active rounded" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <hr class="border-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100" data-bs-toggle="dropdown">
+                            Пользователь
+                        </button>
+                        <ul class="dropdown-menu w-100">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><hr class="dropdown-divider m-0"></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="card-header text-center m-5">
+                <h1>КОНТАКТЫ</h1>
+            </div>
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <form>
+                            <div class="mb-3 text-start">
+                                <label for="exampleFormControlInput1" class="form-label ">Имя</label>
+                                <input type="text" class="form-control" placeholder="Иван">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="exampleFormControlInput1" class="form-label">Почта</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col text-start">
+                        <h3>Наши контакты</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.
+                        </p>
+                        <p>
+                        While these feedback styles cannot be styled with CSS, you can still
+                        customize the feedback text through JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
